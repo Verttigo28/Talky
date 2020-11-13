@@ -1,0 +1,46 @@
+<!doctype html>
+<meta charset="utf-8"/>
+<head>
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon"/>
+    <title>Talky - Text Me</title></head>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/custom.css" rel="stylesheet">
+<html>
+
+<body>
+<div class="container">
+    <form action="" id="form" method="post">
+        <h1>Talky - Fait moi savoir si tu veux parler!</h1>
+
+        <div class="mt-4">
+            <p class="">Coche la case si tu ne veux pas réveler ton identité!</p>
+            <input autocomplete="off" class="" type="checkbox" value="" id="checkbox">
+        </div>
+
+        <input autocomplete="off" type="text" id="inputName" placeholder="Ton nom" required>
+        <br>
+        <textarea autocomplete="off" type="text" class="" id="inputMessage" placeholder="Tu me manques" maxlength="500" rows="5" required></textarea>
+        <br>
+        <div id="captcha" class="g-recaptcha" data-sitekey="6Le6O-IZAAAAALpGlqt5B0ciybJTYiljZ9a5lIeb"></div>
+        <br>
+        <button id="contact-submit" name="submit" type="submit">Me notifier!</button>
+
+        <div class="footer-copyright text-center py-3">Baptiste Ferrando - MIT Licence - <a
+                href="https://github.com/Verttigo28/Talky">Github ♥</a></div>
+
+    </form>
+</div>
+</body>
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+<script crossorigin="anonymous" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+        src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+<script src="js/mechanics.js"></script>
+
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+
+</html>
+
